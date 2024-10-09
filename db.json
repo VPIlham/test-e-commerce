@@ -237,40 +237,6 @@
         "https://example.com/images/vivox60pro_front.jpg",
         "https://example.com/images/vivox60pro_back.jpg"
       ]
-    },
-    {
-      "id": 8,
-      "name": "Asus Zenfone 8",
-      "category": "Smartphone",
-      "price": 8499000,
-      "stock": 30,
-      "brand": "Asus",
-      "rating": 4.4,
-      "reviews": [
-        {
-          "user": "TechGuy",
-          "comment": "Performa flagship dengan ukuran yang kompak. Sangat nyaman digunakan satu tangan.",
-          "rating": 5
-        },
-        {
-          "user": "Julia24",
-          "comment": "Desainnya bagus, tapi pilihan warnanya kurang menarik.",
-          "rating": 4
-        }
-      ],
-      "description": "Asus Zenfone 8 adalah ponsel flagship kompak dengan layar 5.9 inci, Snapdragon 888, dan baterai 4000mAh. Ideal untuk pengguna yang menginginkan perangkat kecil namun bertenaga.",
-      "specifications": {
-        "screen_size": "5.9 inches",
-        "battery_capacity": "4000mAh",
-        "camera": "64MP + 12MP",
-        "processor": "Snapdragon 888",
-        "ram": "8GB",
-        "storage": "128GB"
-      },
-      "images": [
-        "https://example.com/images/asuszenfone8_front.jpg",
-        "https://example.com/images/asuszenfone8_back.jpg"
-      ]
     }
   ]
 }
