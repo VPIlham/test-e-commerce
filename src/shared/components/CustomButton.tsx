@@ -3,7 +3,8 @@ import styled, { css } from 'styled-components';
 type ButtonProps = {
     variant?: 'primary' | 'danger' | 'warning' | 'outline';
     children: React.ReactNode;
-};
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const buttonVariants = {
     primary: css`

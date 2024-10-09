@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
     setIsMobile(isMobileDevice());
 
     const cartItems = Cookies.get('cart') ? JSON.parse(Cookies.get('cart') || '[]') : [];
-    const total = cartItems.reduce((sum: number, item: any) => sum + Number(item.quantity), 0);
+    const total = cartItems.reduce((sum: number, item: { quantity: number }) => sum + Number(item.quantity), 0);
     setCartTotal(total);
   }, []);
 
