@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
       <ButtonContainer>
         <CartContainer>
           <Image src={'/checkout.png'} alt="checkout" width={24} height={24} />
-          {cartTotal > 0 && <CartBadge>{cartTotal}</CartBadge>}  {/* Menampilkan badge jika ada item di keranjang */}
+          {cartTotal > 0 && <CartBadge>{cartTotal}</CartBadge>}
         </CartContainer>
         <CustomButton variant="outline">Masuk / Register</CustomButton>
       </ButtonContainer>
