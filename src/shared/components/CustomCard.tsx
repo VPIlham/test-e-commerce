@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import styled from "styled-components";
 
 type CustomCardProps = {
     children: React.ReactNode;
+    props?: any;
     maxWidth?: number;
     maxHeight?: number;
     minWidth?: number;
@@ -11,9 +13,9 @@ type CustomCardProps = {
     width?: number;
 };
 
-const CustomCard: React.FC<CustomCardProps> = ({ children, maxWidth, maxHeight }) => {
+const CustomCard: React.FC<CustomCardProps> = ({ children, maxWidth, maxHeight, ...props }) => {
     return (
-        <CardContainer maxWidth={maxWidth} maxHeight={maxHeight}>
+        <CardContainer maxWidth={maxWidth} maxHeight={maxHeight} props={props}>
             {children}
         </CardContainer>
     );

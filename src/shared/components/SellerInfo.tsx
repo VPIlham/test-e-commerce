@@ -1,4 +1,10 @@
-const SellerInfo: React.FC = () => {
+interface SellerInfoProps {
+    location: string;
+    seller: string;
+}
+const SellerInfo: React.FC<SellerInfoProps> = (
+    { location, seller }: SellerInfoProps
+) => {
     return (
         <div className="seller-info">
             <svg width="15px" height="15px" viewBox="-2 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,8 +17,8 @@ const SellerInfo: React.FC = () => {
                 </defs>
             </svg>
             <div className="product-card__seller__interaction">
-                <span className="product-card__seller__name">IBox Apple Reseller</span>
-                <span className="product-card__seller__name">Kota Bandung & kota lainnya</span>
+                <span className="product-card__seller__name">{seller}</span>
+                <span className="product-card__seller__name">{location}</span>
             </div>
         </div>
     );

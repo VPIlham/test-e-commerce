@@ -8,12 +8,6 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "reqres.in",
-        port: "",
-        pathname: "/img/faces/**",
-      },
-      {
-        protocol: "https",
         hostname: "www.static-src.com",
         port: "",
       },

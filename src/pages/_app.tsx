@@ -1,19 +1,14 @@
-import React from "react";
+import React from 'react';
 import {
     QueryClient,
     QueryClientProvider,
 } from '@tanstack/react-query';
 import type { AppProps } from 'next/app';
-// import type { Metadata } from "next";
 import Navbar from "@/shared/components/layouts/Navbar";
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import './globals.css';
 import { isMobileDevice } from "@/shared/helpers/utils";
 
-// export const metadata: Metadata = {
-//     title: "Evermos - Pusat Reseller Elektronik Online Terpercaya",
-//     description: "Pusat Reseller barang elektronik online terpercaya se Indonesia",
-// };
 
 const GlobalStyle = createGlobalStyle`
   body {

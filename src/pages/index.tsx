@@ -1,27 +1,34 @@
 import HeaderPromo from '@/shared/components/layouts/HeaderPromo';
 import SectionProducts from '@/shared/components/layouts/SectionProducts';
 import { isMobileDevice } from '@/shared/helpers/utils';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const Home = () => {
-    console.log('isMobileDevice = ', isMobileDevice());
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsMobile(isMobileDevice());
+        }
+    }, []);
+
     return (
-        <CenterContent>
+        <CenterContent isMobile={isMobile}>
             <HeaderPromo />
             <SectionProducts />
         </CenterContent>
     );
 };
 
-const CenterContent = styled.div`
+const CenterContent = styled.div<{ isMobile: boolean }>`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: ${isMobileDevice() ? '96%' : '70%'};
+    width: ${({ isMobile }) => (isMobile ? '95%' : '70%')};
     margin: 0 auto;
     text-align: left;
-    margin-bottom: ${isMobileDevice() ? '100px' : '80px'};
+    margin-bottom: ${({ isMobile }) => (isMobile ? '100px' : '80px')};
 `;
 
 export default Home;

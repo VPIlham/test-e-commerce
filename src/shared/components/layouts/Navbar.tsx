@@ -3,8 +3,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import CustomButton from '../CustomButton';
 import { isMobileDevice } from '@/shared/helpers/utils';
-import CustomResponsiveImage from '../CustomImageResponsive';
-
+import Cookies from 'js-cookie';
 
 const NavbarContainer = styled.nav`
   width: 100% !important;
@@ -32,11 +31,31 @@ const ButtonContainer = styled.div`
   gap: 18px;
 `;
 
+const CartBadge = styled.span`
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 8px;
+  font-size: 12px;
+  position: relative;
+  top: -10px;
+  right: -10px;
+`;
+
+const CartContainer = styled.div`
+  position: relative;
+`;
+
 const Navbar: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [cartTotal, setCartTotal] = useState(0);
 
   useEffect(() => {
     setIsMobile(isMobileDevice());
+
+    const cartItems = Cookies.get('cart') ? JSON.parse(Cookies.get('cart') || '[]') : [];
+    const total = cartItems.reduce((sum: number, item: any) => sum + Number(item.quantity), 0);
+    setCartTotal(total);
   }, []);
 
   return (
@@ -46,7 +65,10 @@ const Navbar: React.FC = () => {
       </Logo>
 
       <ButtonContainer>
-        <Image src={'/checkout.png'} alt="checkout" width={24} height={24} />
+        <CartContainer>
+          <Image src={'/checkout.png'} alt="checkout" width={24} height={24} />
+          {cartTotal > 0 && <CartBadge>{cartTotal}</CartBadge>}  {/* Menampilkan badge jika ada item di keranjang */}
+        </CartContainer>
         <CustomButton variant="outline">Masuk / Register</CustomButton>
       </ButtonContainer>
     </NavbarContainer>

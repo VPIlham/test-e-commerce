@@ -155,12 +155,6 @@ h3 {
   color: red;
 }
 
-.product-list {
-  display: flex;
-  gap: 20px;
-  margin-top: 10px;
-}
-
 .seller-info {
   display: flex;
   align-items: center;

@@ -75,8 +75,8 @@ const StyledButton = styled.button<ButtonProps>`
   }
 `;
 
-const CustomButton: React.FC<ButtonProps> = ({ variant = 'primary', children }) => {
-    return <StyledButton variant={variant}>{children}</StyledButton>;
+const CustomButton: React.FC<ButtonProps> = ({ variant = 'primary', children, ...props }) => {
+    return <StyledButton {...props} variant={variant}>{children}</StyledButton>;
 };
 
 export default CustomButton;

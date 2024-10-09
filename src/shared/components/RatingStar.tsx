@@ -1,4 +1,4 @@
-const RatingStar: React.FC<{ rating: number }> = ({ rating }) => {
+const RatingStar: React.FC<{ rating: string }> = ({ rating }) => {
     return (
         <div className="rating">
             <svg width="15px" height="15px" viewBox="0 -0.5 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
