@@ -1,3 +1,4 @@
+import HeadMeta from '@/shared/components/HeadMeta';
 import HeaderPromo from '@/shared/components/layouts/HeaderPromo';
 import SectionProducts from '@/shared/components/layouts/SectionProducts';
 import { isMobileDevice } from '@/shared/helpers/utils';
@@ -15,6 +16,7 @@ const Home = () => {
 
     return (
         <CenterContent isMobile={isMobile}>
+            <HeadMeta title="Home | Evermos" description="Web Handphone barang paling lengkap" />
             <HeaderPromo />
             <SectionProducts />
         </CenterContent>

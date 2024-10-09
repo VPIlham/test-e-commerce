@@ -8,35 +8,43 @@ import styled from "styled-components";
 import Image from "next/image";
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import useGetDetailProducts from "@/features/products/hooks/useGetDetailProducts";
 import RatingStar from "@/shared/components/RatingStar";
 import Skeleton from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css';
 import CustomButton from "@/shared/components/CustomButton";
 import Cookies from 'js-cookie';
+import HeadMeta from "@/shared/components/HeadMeta";
+import { GetServerSideProps } from "next";
+import { fetchDetailProduct } from "@/shared/api/fetch/products";
 
 
-const DetailPage = () => {
+const DetailPage = (data: any) => {
     const [isMobile, setIsMobile] = useState(false);
+    const [isPending, setIsPending] = useState(true);
     const [activeImg, setActiveImg] = useState<string>('');
     const [imgData, setImageData] = useState<any>([]);
     const [quantity, setQuantity] = useState<any>(1);
     const router = useRouter();
-    const { id, slug } = router.query;
+    const { slug } = router.query;
 
-    const { data, isPending } = useGetDetailProducts(id as string);
+    // const { data, isPending } = useGetDetailProducts(id as string);
 
-    console.log('router = ', router.query);
-    console.log('router = ', router);
+    // console.log('router = ', router.query);
+    // console.log('router = ', router);
+    // console.log('data baru = ', data?.data);
+    // console.log('isPending = ', isPending);
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
             setIsMobile(isMobileDevice());
         }
         if (data) {
-            setImageData(data?.images || []);
-            setActiveImg(data?.images[0] || '');
+            setImageData(data?.data?.images || []);
+            setActiveImg(data?.data?.images[0] || '');
         }
+        setTimeout(() => {
+            setIsPending(false);
+        }, 700);
     }, [data]);
 
     const breadcrumbItems = [
@@ -62,6 +70,7 @@ const DetailPage = () => {
 
     return (
         <CenterContent isMobile={isMobile}>
+            <HeadMeta description={`Beli HP ${data?.data?.name} dengan harga termurah yaitu Rp. ${priceFormat(data?.data?.price)}`} title={data?.data?.name} keywords={`HP ${data?.data?.name} termurah`} />
             <CustomBreadcrumb items={breadcrumbItems} />
             <hr />
             <FlexContainer>
@@ -98,27 +107,27 @@ const DetailPage = () => {
                 <SellerInfoContainer>
                     <CustomCard>
                         <h1 className="title-item">
-                            {isPending ? <Skeleton width={200} /> : data?.name}
+                            {isPending ? <Skeleton width={200} /> : data?.data?.name}
                         </h1>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: 5 }}>
                             <h3 className="price-text">
-                                {isPending ? <Skeleton width={100} /> : priceFormat(data?.price)}
+                                {isPending ? <Skeleton width={100} /> : priceFormat(data?.data?.price)}
                             </h3>
                             {!isPending && (
-                                <p className="price-text-discount">{priceFormat(data?.price + 250000)}</p>
+                                <p className="price-text-discount">{priceFormat(data?.data?.price + 250000)}</p>
                             )}
                         </div>
                         <div>
                             <span>
                                 {isPending ? <Skeleton width={150} /> : (
                                     <>
-                                        <RatingStar rating={`${data?.rating} (${data?.reviews?.length ?? 0}) Terjual`} />
+                                        <RatingStar rating={`${data?.data?.rating} (${data?.data?.reviews?.length ?? 0}) Terjual`} />
                                     </>
                                 )}
                             </span>
                         </div>
                         <div style={{ marginTop: 5 }}>
-                            <strong>Stok: </strong> {isPending ? <Skeleton width={100} /> : data?.stock}
+                            <strong>Stok: </strong> {isPending ? <Skeleton width={100} /> : data?.data?.stock}
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: 5 }}>
                             {isPending ? (
@@ -136,11 +145,11 @@ const DetailPage = () => {
                         </div>
                         <div style={{ marginTop: 5 }}>
                             <strong>Merk: </strong>
-                            {isPending ? <Skeleton width={100} /> : <strong>{data?.brand}</strong>}
+                            {isPending ? <Skeleton width={100} /> : <strong>{data?.data?.brand}</strong>}
                             <div>
                                 <span>Deskripsi: </span>
                                 <p style={{ fontWeight: 300 }}>
-                                    {isPending ? <Skeleton count={3} /> : data?.description}
+                                    {isPending ? <Skeleton count={3} /> : data?.data?.description}
                                 </p>
                             </div>
                             <div style={{ marginTop: 10 }}>
@@ -148,18 +157,18 @@ const DetailPage = () => {
                                     <Skeleton count={4} />
                                 ) : (
                                     <>
-                                        <div><strong>Processor:</strong> {data?.specifications?.processor}</div>
-                                        <div><strong>Battery Capacity:</strong> {data?.specifications?.battery_capacity}</div>
-                                        <div><strong>Camera:</strong> {data?.specifications?.camera}</div>
-                                        <div><strong>RAM:</strong> {data?.specifications?.ram}</div>
-                                        <div><strong>Storage:</strong> {data?.specifications?.storage}</div>
+                                        <div><strong>Processor:</strong> {data?.data?.specifications?.processor}</div>
+                                        <div><strong>Battery Capacity:</strong> {data?.data?.specifications?.battery_capacity}</div>
+                                        <div><strong>Camera:</strong> {data?.data?.specifications?.camera}</div>
+                                        <div><strong>RAM:</strong> {data?.data?.specifications?.ram}</div>
+                                        <div><strong>Storage:</strong> {data?.data?.specifications?.storage}</div>
                                     </>
                                 )}
                             </div>
                         </div>
                         <div style={{ marginTop: 15, display: 'flex', alignItems: 'center', gap: 10 }}>
                             <input value={quantity} onChange={(e) => setQuantity(e.target.value)} style={{ height: 40, width: 100 }} />
-                            <CustomButton variant="primary" onClick={() => addToCart(data?.id, quantity)}>Pesan</CustomButton>
+                            <CustomButton variant="primary" onClick={() => addToCart(data?.data?.id, quantity)}>Pesan</CustomButton>
                         </div>
                     </CustomCard>
                     <br />
@@ -171,10 +180,10 @@ const DetailPage = () => {
                                 <Image src='/user.png' width={60} height={60} alt='user' style={{ borderRadius: '50%', width: '60px', height: '60px' }} />
                             )}
                             <span>
-                                <h3 className="title-item">{isPending ? <Skeleton width={150} /> : data?.seller}</h3>
+                                <h3 className="title-item">{isPending ? <Skeleton width={150} /> : data?.data?.seller}</h3>
                                 <div>
                                     {isPending ? <Skeleton width={100} /> : (
-                                        <RatingStar rating={`${data?.rating} (${data?.reviews?.length ?? 0}) Terjual`} />
+                                        <RatingStar rating={`${data?.data?.rating} (${data?.data?.reviews?.length ?? 0}) Terjual`} />
                                     )}
                                 </div>
                                 <div style={{ marginTop: 10 }}>
@@ -191,7 +200,7 @@ const DetailPage = () => {
                                                     </radialGradient>
                                                 </defs>
                                             </svg>
-                                            <label style={{ marginLeft: 5, fontSize: 14 }}>{data?.location}</label>
+                                            <label style={{ marginLeft: 5, fontSize: 14 }}>{data?.data?.location}</label>
                                         </>
                                     )}
                                 </div>
@@ -204,8 +213,8 @@ const DetailPage = () => {
                         <hr />
                         {isPending ? (
                             <Skeleton count={3} height={50} />
-                        ) : data?.reviews?.length > 0 ? (
-                            data.reviews.map((review: any, index: number) => (
+                        ) : data?.data?.reviews?.length > 0 ? (
+                            data?.data.reviews.map((review: any, index: number) => (
                                 <div key={index} style={{ borderBottom: '1px solid #ddd', padding: '10px 0' }}>
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                                         <Image src='/user.png' width={40} height={40} alt='user' style={{ borderRadius: '50%', width: '60px', height: '60px' }} />
@@ -223,6 +232,25 @@ const DetailPage = () => {
             </FlexContainer>
         </CenterContent>
     );
+};
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+    const { id, slug } = context.query;
+
+    const res = await fetchDetailProduct(id as string);
+
+    console.log('ID produk:', id);
+    console.log('Slug produk:', slug);
+    console.log('RES = ', res);
+
+    return {
+        props: {
+            data: res,
+            isPending: !res,
+            id,
+            slug,
+        },
+    };
 };
 
 const CenterContent = styled.div<{ isMobile: boolean }>`
