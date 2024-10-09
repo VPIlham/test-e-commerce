@@ -5,6 +5,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Home = () => {
+    console.log('isMobileDevice = ', isMobileDevice());
     return (
         <CenterContent>
             <HeaderPromo />
@@ -17,7 +18,7 @@ const CenterContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: ${isMobileDevice() ? '100%' : '70%'};
+    width: ${isMobileDevice() ? '96%' : '70%'};
     margin: 0 auto;
     text-align: left;
     margin-bottom: ${isMobileDevice() ? '100px' : '80px'};

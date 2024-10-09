@@ -29,9 +29,11 @@
         "ram": "6GB",
         "storage": "512GB"
       },
+      "location": "Bandung",
+      "seller": "Ibox",
       "images": [
-        "https://example.com/images/iphone13promax_front.jpg",
-        "https://example.com/images/iphone13promax_back.jpg"
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/MTA-55758860/apple_iphone_13_pro_max_full01_chcci7r6.jpg?w=360",
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//108/MTA-55758860/apple_iphone_13_pro_max_full07_osqf0rq5.jpg"
       ]
     },
     {
@@ -63,9 +65,11 @@
         "ram": "12GB",
         "storage": "256GB"
       },
+      "location": "Bandung",
+      "seller": "Samsung Store",
       "images": [
-        "https://example.com/images/galaxys21ultra_front.jpg",
-        "https://example.com/images/galaxys21ultra_back.jpg"
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//99/MTA-20655737/samsung_samsung_galaxy_s21_ultra_ram_12-256gb_resmi_full01_05aa9789.jpg",
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//99/MTA-20655737/samsung_samsung_galaxy_s21_ultra_ram_12-256gb_resmi_full02_b181eb94.jpg"
       ]
     },
     {
@@ -97,9 +101,10 @@
         "ram": "8GB",
         "storage": "128GB"
       },
+      "location": "Jakarta",
+      "seller": "PS Store",
       "images": [
-        "https://example.com/images/vivov21_front.jpg",
-        "https://example.com/images/vivov21_back.jpg"
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//107/MTA-74157866/vivo_vivo_v21_5g_smartphone_-8gb-128gb-_full01_tnll1fru.jpg"
       ]
     },
     {
@@ -131,9 +136,11 @@
         "ram": "16GB",
         "storage": "512GB"
       },
+      "location": "Jakarta",
+      "seller": "Asus Store",
       "images": [
-        "https://example.com/images/asusrogphone5_front.jpg",
-        "https://example.com/images/asusrogphone5_back.jpg"
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/108/MTA-159601868/asus_asus_rog_phone_8_12gb-256gb_full01_7bxoy6b.jpg",
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/108/MTA-159601868/asus_asus_rog_phone_8_12gb-256gb_full04_qo717fcl.jpg"
       ]
     },
     {
@@ -165,9 +172,11 @@
         "ram": "4GB",
         "storage": "128GB"
       },
+      "location": "Bandung",
+      "seller": "Ibox Store",
       "images": [
-        "https://example.com/images/iphone12mini_front.jpg",
-        "https://example.com/images/iphone12mini_back.jpg"
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//100/MTA-53912377/apple_iphone_13_full29_m5c1sg1n.jpg",
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//100/MTA-53912377/apple_iphone_13_full31_k7suwqj1.jpg"
       ]
     },
     {
@@ -199,9 +208,11 @@
         "ram": "12GB",
         "storage": "256GB"
       },
+      "location": "Depok",
+      "seller": "Samsung Store",
       "images": [
-        "https://example.com/images/galaxyzfold3_front.jpg",
-        "https://example.com/images/galaxyzfold3_back.jpg"
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/MTA-176062833/samsung_samsung_galaxy_z_fold6_-12-256gb-_smartphone_ai-_smartphone_lipat-_android-_kamera_50mp-_flexcam_-free_sc-_1y_full50_fkxscvpc.jpeg",
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/100/MTA-176062833/samsung_batch3_-_samsung_galaxy_z_fold6_-12-256gb-_smartphone_ai-_smartphone_lipat-_android-_kamera_50mp-__flexcam-free_sc-_1thn_full06_jl33xvfb.jpg"
       ]
     },
     {
@@ -233,9 +244,10 @@
         "ram": "12GB",
         "storage": "256GB"
       },
+      "location": "Jakarta",
+      "seller": "PS Store",
       "images": [
-        "https://example.com/images/vivox60pro_front.jpg",
-        "https://example.com/images/vivox60pro_back.jpg"
+        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/104/MTA-116862638/br-m036969-03485_vivo-x60-pro-ram-12-rom-256gb_full01-3404f9e2.jpg"
       ]
     }
   ]
