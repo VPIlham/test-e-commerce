@@ -1,0 +1,548 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 13 Pro Max",
+      "category": "Smartphone",
+      "price": 20999000,
+      "stock": 30,
+      "brand": "Apple",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "user": "Rahman23",
+          "comment": "Performa luar biasa dengan kamera yang sangat tajam.",
+          "rating": 5
+        },
+        {
+          "user": "Nisa12",
+          "comment": "Baterai tahan lama, tapi agak berat di tangan.",
+          "rating": 4
+        }
+      ],
+      "description": "iPhone 13 Pro Max hadir dengan layar Super Retina XDR 6.7 inci, chipset A15 Bionic, dan sistem kamera Pro yang lebih canggih. Ideal untuk fotografi dan performa maksimal.",
+      "specifications": {
+        "screen_size": "6.7 inches",
+        "battery_capacity": "4352mAh",
+        "camera": "12MP Ultra-Wide + Wide",
+        "processor": "A15 Bionic",
+        "ram": "6GB",
+        "storage": "512GB"
+      },
+      "images": [
+        "https://example.com/images/iphone13promax_front.jpg",
+        "https://example.com/images/iphone13promax_back.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S21 Ultra",
+      "category": "Smartphone",
+      "price": 18999000,
+      "stock": 20,
+      "brand": "Samsung",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "user": "Dewi88",
+          "comment": "Layar 120Hz sangat halus, kameranya juga sangat bagus.",
+          "rating": 5
+        },
+        {
+          "user": "Arif45",
+          "comment": "Harganya agak mahal, tapi sesuai dengan fiturnya.",
+          "rating": 4
+        }
+      ],
+      "description": "Samsung Galaxy S21 Ultra hadir dengan layar 6.8 inci, kamera 108MP, dan mendukung S-Pen untuk pengalaman penggunaan yang lebih baik.",
+      "specifications": {
+        "screen_size": "6.8 inches",
+        "battery_capacity": "5000mAh",
+        "camera": "108MP + 12MP + 10MP",
+        "processor": "Exynos 2100",
+        "ram": "12GB",
+        "storage": "256GB"
+      },
+      "images": [
+        "https://example.com/images/galaxys21ultra_front.jpg",
+        "https://example.com/images/galaxys21ultra_back.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Vivo V21 5G",
+      "category": "Smartphone",
+      "price": 5999000,
+      "stock": 50,
+      "brand": "Vivo",
+      "rating": 4.5,
+      "reviews": [
+        {
+          "user": "LisaR",
+          "comment": "Desain ramping, kamera depan sangat bagus untuk selfie.",
+          "rating": 5
+        },
+        {
+          "user": "Andre10",
+          "comment": "Performa cepat, tapi kadang panas saat digunakan terus menerus.",
+          "rating": 4
+        }
+      ],
+      "description": "Vivo V21 5G dengan layar AMOLED 6.44 inci, kamera depan 44MP dengan OIS, dan mendukung jaringan 5G. Cocok untuk pengguna yang suka selfie dan performa cepat.",
+      "specifications": {
+        "screen_size": "6.44 inches",
+        "battery_capacity": "4000mAh",
+        "camera": "64MP + 8MP + 2MP",
+        "processor": "Dimensity 800U",
+        "ram": "8GB",
+        "storage": "128GB"
+      },
+      "images": [
+        "https://example.com/images/vivov21_front.jpg",
+        "https://example.com/images/vivov21_back.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Asus ROG Phone 5",
+      "category": "Smartphone",
+      "price": 16999000,
+      "stock": 18,
+      "brand": "Asus",
+      "rating": 4.9,
+      "reviews": [
+        {
+          "user": "GamerX",
+          "comment": "Sangat sempurna untuk gaming, performa cepat dan tanpa lag.",
+          "rating": 5
+        },
+        {
+          "user": "DinaPro",
+          "comment": "Baterai tahan lama, sangat cocok untuk gamer berat.",
+          "rating": 5
+        }
+      ],
+      "description": "Asus ROG Phone 5 adalah ponsel gaming dengan Snapdragon 888, layar 144Hz AMOLED, dan baterai 6000mAh. Didesain khusus untuk pengalaman bermain game maksimal.",
+      "specifications": {
+        "screen_size": "6.78 inches",
+        "battery_capacity": "6000mAh",
+        "camera": "64MP + 13MP + 5MP",
+        "processor": "Snapdragon 888",
+        "ram": "16GB",
+        "storage": "512GB"
+      },
+      "images": [
+        "https://example.com/images/asusrogphone5_front.jpg",
+        "https://example.com/images/asusrogphone5_back.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "iPhone 12 Mini",
+      "category": "Smartphone",
+      "price": 12999000,
+      "stock": 40,
+      "brand": "Apple",
+      "rating": 4.6,
+      "reviews": [
+        {
+          "user": "ArmanP",
+          "comment": "Sangat kompak dan nyaman di genggaman, performanya luar biasa.",
+          "rating": 5
+        },
+        {
+          "user": "Nina87",
+          "comment": "Ukuran kecilnya nyaman, tapi baterainya cepat habis.",
+          "rating": 4
+        }
+      ],
+      "description": "iPhone 12 Mini adalah iPhone kecil dengan layar 5.4 inci Super Retina XDR, A14 Bionic, dan kamera dual 12MP. Ideal untuk pengguna yang menginginkan ponsel ringkas namun bertenaga.",
+      "specifications": {
+        "screen_size": "5.4 inches",
+        "battery_capacity": "2227mAh",
+        "camera": "12MP Ultra-Wide + Wide",
+        "processor": "A14 Bionic",
+        "ram": "4GB",
+        "storage": "128GB"
+      },
+      "images": [
+        "https://example.com/images/iphone12mini_front.jpg",
+        "https://example.com/images/iphone12mini_back.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy Z Fold 3",
+      "category": "Smartphone",
+      "price": 24999000,
+      "stock": 10,
+      "brand": "Samsung",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "user": "FoldFanatic",
+          "comment": "Inovatif, pengalaman lipat yang memuaskan dan kualitas build premium.",
+          "rating": 5
+        },
+        {
+          "user": "Gita23",
+          "comment": "Cocok untuk multitasking, tapi harga masih terlalu tinggi.",
+          "rating": 4
+        }
+      ],
+      "description": "Samsung Galaxy Z Fold 3 adalah ponsel lipat dengan layar Dynamic AMOLED 7.6 inci yang mendukung S-Pen. Cocok untuk multitasking dan hiburan.",
+      "specifications": {
+        "screen_size": "7.6 inches",
+        "battery_capacity": "4400mAh",
+        "camera": "12MP + 12MP + 12MP",
+        "processor": "Snapdragon 888",
+        "ram": "12GB",
+        "storage": "256GB"
+      },
+      "images": [
+        "https://example.com/images/galaxyzfold3_front.jpg",
+        "https://example.com/images/galaxyzfold3_back.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Vivo X60 Pro",
+      "category": "Smartphone",
+      "price": 10999000,
+      "stock": 25,
+      "brand": "Vivo",
+      "rating": 4.5,
+      "reviews": [
+        {
+          "user": "Ricky89",
+          "comment": "Kamera Zeiss sangat memuaskan, hasil foto sangat detail.",
+          "rating": 5
+        },
+        {
+          "user": "Nina21",
+          "comment": "Desain mewah, tapi harganya sedikit mahal untuk spesifikasi.",
+          "rating": 4
+        }
+      ],
+      "description": "Vivo X60 Pro hadir dengan kamera optik Zeiss, layar AMOLED 6.56 inci, dan Snapdragon 870. Cocok untuk pengguna yang mengutamakan fotografi berkualitas tinggi.",
+      "specifications": {
+        "screen_size": "6.56 inches",
+        "battery_capacity": "4200mAh",
+        "camera": "48MP + 13MP + 13MP",
+        "processor": "Snapdragon 870",
+        "ram": "12GB",
+        "storage": "256GB"
+      },
+      "images": [
+        "https://example.com/images/vivox60pro_front.jpg",
+        "https://example.com/images/vivox60pro_back.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Asus Zenfone 8",
+      "category": "Smartphone",
+      "price": 8499000,
+      "stock": 30,
+      "brand": "Asus",
+      "rating": 4.4,
+      "reviews": [
+        {
+          "user": "TechGuy",
+          "comment": "Performa flagship dengan ukuran yang kompak. Sangat nyaman digunakan satu tangan.",
+          "rating": 5
+        },
+        {
+          "user": "Julia24",
+          "comment": "Desainnya bagus, tapi pilihan warnanya kurang menarik.",
+          "rating": 4
+        }
+      ],
+      "description": "Asus Zenfone 8 adalah ponsel flagship kompak dengan layar 5.9 inci, Snapdragon 888, dan baterai 4000mAh. Ideal untuk pengguna yang menginginkan perangkat kecil namun bertenaga.",
+      "specifications": {
+        "screen_size": "5.9 inches",
+        "battery_capacity": "4000mAh",
+        "camera": "64MP + 12MP",
+        "processor": "Snapdragon 888",
+        "ram": "8GB",
+        "storage": "128GB"
+      },
+      "images": [
+        "https://example.com/images/asuszenfone8_front.jpg",
+        "https://example.com/images/asuszenfone8_back.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "iPhone 12 Pro",
+      "category": "Smartphone",
+      "price": 17999000,
+      "stock": 15,
+      "brand": "Apple",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "user": "AdiT",
+          "comment": "Performa sangat baik dan kameranya tajam.",
+          "rating": 5
+        },
+        {
+          "user": "Fiona88",
+          "comment": "Kualitas premium, tapi baterai sedikit di bawah harapan.",
+          "rating": 4
+        }
+      ],
+      "description": "iPhone 12 Pro dengan layar 6.1 inci Super Retina XDR, A14 Bionic, dan kamera Pro yang mendukung perekaman video Dolby Vision.",
+      "specifications": {
+        "screen_size": "6.1 inches",
+        "battery_capacity": "2815mAh",
+        "camera": "12MP Ultra-Wide + Wide + Telephoto",
+        "processor": "A14 Bionic",
+        "ram": "6GB",
+        "storage": "256GB"
+      },
+      "images": [
+        "https://example.com/images/iphone12pro_front.jpg",
+        "https://example.com/images/iphone12pro_back.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Samsung Galaxy Note 20 Ultra",
+      "category": "Smartphone",
+      "price": 19999000,
+      "stock": 20,
+      "brand": "Samsung",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "user": "NoteFan",
+          "comment": "S-Pen sangat responsif, cocok untuk pekerjaan dan catatan harian.",
+          "rating": 5
+        },
+        {
+          "user": "DanielP",
+          "comment": "Ukuran besar, tapi fitur-fiturnya luar biasa.",
+          "rating": 4
+        }
+      ],
+      "description": "Samsung Galaxy Note 20 Ultra dilengkapi dengan S-Pen, layar 6.9 inci AMOLED 120Hz, dan kamera 108MP, sangat cocok untuk produktivitas dan hiburan.",
+      "specifications": {
+        "screen_size": "6.9 inches",
+        "battery_capacity": "4500mAh",
+        "camera": "108MP + 12MP + 12MP",
+        "processor": "Exynos 990",
+        "ram": "12GB",
+        "storage": "256GB"
+      },
+      "images": [
+        "https://example.com/images/galaxynote20ultra_front.jpg",
+        "https://example.com/images/galaxynote20ultra_back.jpg"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "iPhone SE (2020)",
+      "category": "Smartphone",
+      "price": 6999000,
+      "stock": 40,
+      "brand": "Apple",
+      "rating": 4.4,
+      "reviews": [
+        {
+          "user": "YusufW",
+          "comment": "Ukuran kecil dan performa tinggi, sangat cocok untuk pengguna yang suka ponsel kompak.",
+          "rating": 5
+        },
+        {
+          "user": "Sari90",
+          "comment": "Desain terlalu mirip dengan model lama, tetapi performanya memuaskan.",
+          "rating": 4
+        }
+      ],
+      "description": "iPhone SE (2020) adalah iPhone kompak dengan layar 4.7 inci Retina HD, A13 Bionic, dan kamera 12MP. Ideal untuk pengguna yang menginginkan perangkat bertenaga dalam desain kecil.",
+      "specifications": {
+        "screen_size": "4.7 inches",
+        "battery_capacity": "1821mAh",
+        "camera": "12MP Wide",
+        "processor": "A13 Bionic",
+        "ram": "3GB",
+        "storage": "64GB"
+      },
+      "images": [
+        "https://example.com/images/iphonese2020_front.jpg",
+        "https://example.com/images/iphonese2020_back.jpg"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Samsung Galaxy M51",
+      "category": "Smartphone",
+      "price": 5499000,
+      "stock": 60,
+      "brand": "Samsung",
+      "rating": 4.6,
+      "reviews": [
+        {
+          "user": "DavidK",
+          "comment": "Baterai monster 7000mAh, sangat tahan lama untuk pemakaian sehari-hari.",
+          "rating": 5
+        },
+        {
+          "user": "JokoR",
+          "comment": "Layarnya bagus, tetapi sedikit berat di tangan.",
+          "rating": 4
+        }
+      ],
+      "description": "Samsung Galaxy M51 memiliki baterai besar 7000mAh, layar Super AMOLED 6.7 inci, dan kamera utama 64MP. Cocok untuk pengguna yang memprioritaskan daya tahan baterai.",
+      "specifications": {
+        "screen_size": "6.7 inches",
+        "battery_capacity": "7000mAh",
+        "camera": "64MP + 12MP + 5MP + 5MP",
+        "processor": "Snapdragon 730G",
+        "ram": "8GB",
+        "storage": "128GB"
+      },
+      "images": [
+        "https://example.com/images/galaxym51_front.jpg",
+        "https://example.com/images/galaxym51_back.jpg"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Vivo Y12s",
+      "category": "Smartphone",
+      "price": 1999000,
+      "stock": 100,
+      "brand": "Vivo",
+      "rating": 4.2,
+      "reviews": [
+        {
+          "user": "FeryR",
+          "comment": "Sangat cocok untuk kebutuhan sehari-hari, baterai tahan lama.",
+          "rating": 4
+        },
+        {
+          "user": "IntanB",
+          "comment": "Performa baik, tetapi kamera tidak terlalu istimewa.",
+          "rating": 3
+        }
+      ],
+      "description": "Vivo Y12s hadir dengan layar 6.51 inci dan baterai 5000mAh. Ponsel ini dirancang untuk penggunaan sehari-hari dengan daya tahan baterai yang lama.",
+      "specifications": {
+        "screen_size": "6.51 inches",
+        "battery_capacity": "5000mAh",
+        "camera": "13MP + 2MP",
+        "processor": "Helio P35",
+        "ram": "3GB",
+        "storage": "32GB"
+      },
+      "images": [
+        "https://example.com/images/vivoy12s_front.jpg",
+        "https://example.com/images/vivoy12s_back.jpg"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Asus ROG Phone 3",
+      "category": "Smartphone",
+      "price": 15999000,
+      "stock": 25,
+      "brand": "Asus",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "user": "GamerPro",
+          "comment": "Performa gaming tanpa kompromi, layar 144Hz sangat halus.",
+          "rating": 5
+        },
+        {
+          "user": "Hadi87",
+          "comment": "Sangat cocok untuk gaming berat, tapi desainnya agak tebal.",
+          "rating": 4
+        }
+      ],
+      "description": "Asus ROG Phone 3 dengan Snapdragon 865+, layar 144Hz AMOLED, dan baterai 6000mAh dirancang untuk para gamer yang membutuhkan performa tinggi.",
+      "specifications": {
+        "screen_size": "6.59 inches",
+        "battery_capacity": "6000mAh",
+        "camera": "64MP + 13MP + 5MP",
+        "processor": "Snapdragon 865+",
+        "ram": "12GB",
+        "storage": "256GB"
+      },
+      "images": [
+        "https://example.com/images/asusrogphone3_front.jpg",
+        "https://example.com/images/asusrogphone3_back.jpg"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "iPhone XR",
+      "category": "Smartphone",
+      "price": 9999000,
+      "stock": 45,
+      "brand": "Apple",
+      "rating": 4.5,
+      "reviews": [
+        {
+          "user": "BudiL",
+          "comment": "Masih relevan dengan performa yang sangat baik di tahun ini.",
+          "rating": 5
+        },
+        {
+          "user": "RinaT",
+          "comment": "Layarnya bagus, tetapi berat sedikit lebih dari yang diharapkan.",
+          "rating": 4
+        }
+      ],
+      "description": "iPhone XR dilengkapi dengan layar 6.1 inci Liquid Retina, A12 Bionic, dan kamera 12MP. Meski lebih lama, masih memberikan performa yang solid.",
+      "specifications": {
+        "screen_size": "6.1 inches",
+        "battery_capacity": "2942mAh",
+        "camera": "12MP Wide",
+        "processor": "A12 Bionic",
+        "ram": "3GB",
+        "storage": "64GB"
+      },
+      "images": [
+        "https://example.com/images/iphonexr_front.jpg",
+        "https://example.com/images/iphonexr_back.jpg"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Samsung Galaxy S20 FE",
+      "category": "Smartphone",
+      "price": 8499000,
+      "stock": 50,
+      "brand": "Samsung",
+      "rating": 4.6,
+      "reviews": [
+        {
+          "user": "SitiP",
+          "comment": "Harga sangat kompetitif dengan fitur flagship, sangat puas.",
+          "rating": 5
+        },
+        {
+          "user": "RianK",
+          "comment": "Layarnya sangat baik, tetapi build quality bisa lebih ditingkatkan.",
+          "rating": 4
+        }
+      ],
+      "description": "Samsung Galaxy S20 FE menawarkan layar 6.5 inci Super AMOLED, kamera 12MP, dan prosesor Exynos 990 dengan harga yang lebih terjangkau untuk pengalaman flagship.",
+      "specifications": {
+        "screen_size": "6.5 inches",
+        "battery_capacity": "4500mAh",
+        "camera": "12MP + 12MP + 8MP",
+        "processor": "Exynos 990",
+        "ram": "6GB",
+        "storage": "128GB"
+      },
+      "images": [
+        "https://example.com/images/galaxys20fe_front.jpg",
+        "https://example.com/images/galaxys20fe_back.jpg"
+      ]
+    }
+  ]
+}
